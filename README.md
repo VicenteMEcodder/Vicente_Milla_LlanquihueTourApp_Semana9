@@ -27,47 +27,69 @@ El sistema permite:
 
 ## Estructura del Proyecto
 
-```mermaid
-graph TD
-    ROOT["LlanquihueTourApp/"]
-    
-    ROOT --> APP["app/ - Punto de entrada"]
-    APP --> APP1["LlanquihueTourApp.java"]
-    
-    ROOT --> DATA["data/ - Gestion de datos"]
-    DATA --> DATA1["DataLoader.java - Carga de datos desde archivos"]
-    DATA --> DATA2["DataManager.java - Gestion central de datos"]
-    DATA --> DATA3["GestorEntidades.java - Gestion de entidades Registrables"]
-    DATA --> DATA4["GestorServicios.java - Gestion de servicios turisticos"]
-    
-    ROOT --> MODEL["model/ - Clases del dominio"]
-    MODEL --> MODEL1["Registrable.java - Interfaz para entidades registrables"]
-    MODEL --> MODEL2["Persona.java - Clase base para personas"]
-    MODEL --> MODEL3["Guia.java - Guia turistico"]
-    MODEL --> MODEL4["Proveedor.java - Proveedor de servicios"]
-    MODEL --> MODEL5["Operador.java - Operador de transporte"]
-    MODEL --> MODEL6["ServicioTuristico.java - Clase base para servicios"]
-    MODEL --> MODEL7["RutaGastronomica.java"]
-    MODEL --> MODEL8["PaseoLacustre.java"]
-    MODEL --> MODEL9["ExcursionCultural.java"]
-    MODEL --> MODEL10["Tour.java - Paquete turistico"]
-    
-    ROOT --> SERVICE["service/ - Servicios de negocio"]
-    SERVICE --> SERVICE1["BusquedaService.java - Busqueda de informacion"]
-    SERVICE --> SERVICE2["RegistroService.java - Registro de entidades"]
-    
-    ROOT --> UI["ui/ - Interfaz de usuario"]
-    UI --> UI1["GuiLlanquihueTour.java - GUI con Swing"]
-    
-    ROOT --> UTIL["util/ - Utilidades"]
-    UTIL --> UTIL1["Validador.java - Validaciones (RUT, email, etc.)"]
-    
-    ROOT --> RESOURCES["resources/ - Archivos de datos"]
-    RESOURCES --> RES1["guias.txt"]
-    RESOURCES --> RES2["proveedores.txt"]
-    RESOURCES --> RES3["operadores.txt"]
-    RESOURCES --> RES4["tours.txt"]
-```
+Estructura del Llanquihue Tour App:
+
+LlanquihueTourApp/
+
+├── app/ # Punto de entrada de la aplicacion
+
+│ └── LlanquihueTourApp.java
+
+├── data/ # Gestion de datos
+
+│ ├── DataLoader.java # Carga de datos desde archivos
+
+│ ├── DataManager.java # Gestion central de datos
+
+│ ├── GestorEntidades.java # Gestion de entidades Registrables
+
+│ └── GestorServicios.java # Gestion de servicios turisticos
+
+├── model/ # Clases del dominio
+
+│ ├── Registrable.java # Interfaz para entidades registrables
+
+│ ├── Persona.java # Clase base para personas
+
+│ ├── Guia.java # Guia turistico
+
+│ ├── Proveedor.java # Proveedor de servicios
+
+│ ├── Operador.java # Operador de transporte
+
+│ ├── ServicioTuristico.java # Clase base para servicios
+
+│ ├── RutaGastronomica.java
+
+│ ├── PaseoLacustre.java
+
+│ ├── ExcursionCultural.java
+
+│ └── Tour.java # Paquete turistico
+
+├── service/ # Servicios de negocio
+
+│ ├── BusquedaService.java # Busqueda de informacion
+
+│ └── RegistroService.java # Registro de entidades
+
+├── ui/ # Interfaz de usuario
+
+│ └── GuiLlanquihueTour.java # GUI con Swing
+
+├── util/ # Utilidades
+
+│ └── Validador.java # Validaciones (RUT, email, etc.)
+
+└── resources/ # Archivos de datos
+
+├── guias.txt
+
+├── proveedores.txt
+
+├── operadores.txt
+
+└── tours.txt
 
 ## Clases Principales y sus Funciones
 
