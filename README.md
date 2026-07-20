@@ -1,6 +1,15 @@
 # Vicente_Milla_LlanquihueTourApp_Semana9
 Llanquihue tour app es una aplicación de gestión desarrollado únicamente con Java que permite administrar las operaciones de la agencia de turismo de Llanquihue, ubicada en la comuna homónima, en la región de los Lagos en chile.
 
+La aplicación permite gestionar eficazmente:
+
+1. Gestionar guías turísticos, proveedores, operadores y tours.
+2. Administrar servicios turísticos (rutas gastronómicas, paseos lacustres a lo largo de la comuna y excursiones culturales).
+3. Registrar y buscar entidades.
+4. Realizar registros y búsquedas de entidades.
+5. Presentar la información a través de una interfaz grafica.
+
+
 Estructura del Llanquihue Tour App:
 
 LlanquihueTourApp/
